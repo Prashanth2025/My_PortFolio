@@ -1,0 +1,67 @@
+/* About Section */
+.about-section {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Centered and narrow layout */
+.about-content {
+  max-width: 750px;
+}
+
+/* Gradient heading */
+.gradient-heading {
+  background: linear-gradient(90deg, #0072ff, #00c6ff);
+  background-clip: text;
+  color: transparent;
+}
+
+/* Highlighted keywords */
+.highlight {
+  color: #0072ff;
+  font-weight: 600;
+}
+
+/* Fade-in Animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 1s forwards;
+}
+
+.fade-in.delay-1 {
+  animation-delay: 0.4s;
+}
+
+.fade-in.delay-2 {
+  animation-delay: 0.8s;
+}
+
+.fade-in.delay-3 {
+  animation-delay: 1.2s;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Subtle decorative background */
+.about-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(
+    rgba(0, 114, 255, 0.05) 1px,
+    transparent 1px
+  );
+  background-size: 40px 40px;
+  z-index: 0;
+}
+
+.about-section .container {
+  position: relative;
+  z-index: 1;
+}
