@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "contact.css";
+import "./contact.css";
 
 function Contact() {
   const [submitted, setSubmitted] = useState(false);

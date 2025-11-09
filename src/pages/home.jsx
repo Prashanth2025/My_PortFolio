@@ -5,27 +5,34 @@ function Home() {
   return (
     <header className="hero d-flex align-items-center justify-content-center text-white">
       <div className="hero-content text-center px-3">
-        <h1 className="fw-bold mb-3 animate-fade">
-          Hi, I'm <span className="text-gradient">Prashanth</span>
+        {/* Name */}
+        <h1 className="hero-title animate-fade">
+          Hello, I'm <span className="name-highlight">Prashanth</span>
         </h1>
 
-        <p className="lead mb-4 animate-fade delay-1">
-          A passionate <span className="skill-tag">React Developer</span> who
-          loves crafting{" "}
-          <span className="skill-tag">responsive interfaces</span>, designing{" "}
-          <span className="skill-tag">clean UIs</span>, and integrating{" "}
-          <span className="skill-tag">real-world APIs</span>. <br />I enjoy
-          working with <span className="skill-tag">Bootstrap</span>, fine-tuning{" "}
-          <span className="skill-tag">CSS effects</span>, and optimizing user
-          experience through thoughtful{" "}
-          <span className="skill-tag">UI/UX design</span>.
+        {/* Role */}
+        <h2 className="hero-subtitle animate-fade delay-1">
+          Front-End Developer | React Specialist
+        </h2>
+
+        {/* Intro / Skills */}
+        <p className="hero-description animate-fade delay-2">
+          I craft <span className="highlight">responsive</span>,{" "}
+          <span className="highlight">accessible</span>, and{" "}
+          <span className="highlight">visually engaging</span> web interfaces
+          using modern technologies like{" "}
+          <span className="highlight">React.js</span>,{" "}
+          <span className="highlight">Tailwind CSS</span>, and{" "}
+          <span className="highlight">Figma</span>. Passionate about clean code,
+          intuitive UX, and real-world problem solving.
         </p>
 
+        {/* Call to Action */}
         <a
           href="/projects"
-          className="btn btn-primary btn-lg animate-fade delay-2"
+          className="btn btn-primary btn-lg animate-fade delay-3"
         >
-          <i className="bi bi-lightning-charge-fill me-2"></i> View My Work
+          Explore My Projects
         </a>
       </div>
     </header>
