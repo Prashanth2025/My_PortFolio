@@ -10,7 +10,7 @@ function ProjectCard({ title, description, tech, link, demo }) {
 
         <div className="mb-3">
           {tech.map((t, i) => (
-            <span key={i} className="badge tech-badge me-2 mb-2">
+            <span key={i} className="badge tech-badge me-2 mb-2 text-primary">
               {t}
             </span>
           ))}

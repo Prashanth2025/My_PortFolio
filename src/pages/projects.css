@@ -48,7 +48,7 @@
   margin-bottom: 0.75rem;
 }
 
-.project-card .card-text {
+.card-text {
   color: #ccc;
   font-size: 0.95rem;
   line-height: 1.6;
@@ -58,7 +58,7 @@
 /* --- Tech Badges --- */
 .tech-badge {
   background-color: rgba(13, 110, 253, 0.08);
-  color: #0d6efd;
+  color: black;
   border: 1px solid rgba(13, 110, 253, 0.3);
   border-radius: 8px;
   font-size: 0.8rem;
@@ -72,7 +72,7 @@
 
 .tech-badge:hover {
   background-color: #0d6efd;
-  color: #fff;
+  color: black;
   border-color: #0d6efd;
   transform: translateY(-3px) scale(1.05);
   box-shadow: 0 4px 10px rgba(13, 110, 253, 0.25);

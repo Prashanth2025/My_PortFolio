@@ -49,7 +49,7 @@ function Projects() {
         </h2>
 
         {/* Filter Buttons */}
-        <div className="d-flex justify-content-center flex-wrap gap-2 mb-5">
+        <div className="d-flex justify-content-center flex-wrap gap-2 mb-5 btn-fliter">
           {techOptions.map((tech) => (
             <button
               key={tech}

@@ -21,8 +21,7 @@ function Home() {
           <span className="highlight">accessible</span>, and{" "}
           <span className="highlight">visually engaging</span> web interfaces
           using modern technologies like{" "}
-          <span className="highlight">React.js</span>,{" "}
-          <span className="highlight">Tailwind CSS</span>, and{" "}
+          <span className="highlight">React.js</span>, and{" "}
           <span className="highlight">Figma</span>. Passionate about clean code,
           intuitive UX, and real-world problem solving.
         </p>
