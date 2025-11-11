@@ -12,7 +12,7 @@ function Home() {
 
         {/* Role */}
         <h2 className="hero-subtitle animate-fade delay-1">
-          Front-End Developer | React Specialist
+          Front-End Developer | React Enthusiast | UI UX Designer
         </h2>
 
         {/* Intro / Skills */}
