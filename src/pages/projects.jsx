@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../styles/projects.css";
+import "./projects.css";
 
 const techFilters = ["All", "React", "Python", "MongoDB", "Flask", "Bootstrap"];
 

@@ -30,7 +30,7 @@ function ProjectCard({ title, description, tech, link, demo }) {
             rel="noopener noreferrer"
             className="btn btn-sm btn-outline-dark"
           >
-            <i className="bi bi-github me-1"></i>Code
+            <i className=" me-1"></i>Code
           </a>
         </div>
       </div>
