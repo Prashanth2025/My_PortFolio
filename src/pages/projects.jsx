@@ -31,7 +31,7 @@ const projects = [
   },
 ];
 
-export default function Projects() {
+function Projects() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -66,3 +66,4 @@ export default function Projects() {
     </div>
   );
 }
+export default Projects;

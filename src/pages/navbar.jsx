@@ -27,18 +27,15 @@ function Navbar() {
         {/* Nav Links */}
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ms-auto d-flex align-items-center gap-1">
-            {["about", "projects", "contact"].map((route) => (
-              <li className="nav-item" key={route}>
-                <NavLink
-                  to={`/${route}`}
-                  className={({ isActive }) =>
-                    `nav-link ${isActive ? "active-link" : ""}`
-                  }
-                >
-                  {route.charAt(0).toUpperCase() + route.slice(1)}
-                </NavLink>
-              </li>
-            ))}
+            <li className="nav-item">
+              <NavLink className="nav-link" to="/about">About</NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink className="nav-link" to="/projects">Projects</NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink className="nav-link" to="/contact">Contact</NavLink>
+            </li>
           </ul>
         </div>
       </div>
