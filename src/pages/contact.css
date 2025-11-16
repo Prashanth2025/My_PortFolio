@@ -63,4 +63,16 @@
   .btn-send {
     width: 100%;
   }
+
+  .contact-form {
+    padding: 1.5rem;
+  }
+
+  .form-floating label {
+    font-size: 0.9rem;
+  }
+
+  .form-control {
+    font-size: 0.95rem;
+  }
 }

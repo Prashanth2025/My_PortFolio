@@ -16,7 +16,7 @@ function About() {
         </h2>
 
         <div className="row justify-content-center">
-          <div className="col-md-8">
+          <div className="col-lg-8 col-md-10 col-sm-12">
             <p className="fs-5 text-center mb-4">
               I'm a front-end developer passionate about crafting clean,
               responsive, and user-friendly interfaces using{" "}
@@ -45,7 +45,7 @@ function About() {
           <h4 className="text-center mb-4 text-primary">
             <i className="bi bi-tools me-2"></i>Skills & Tools
           </h4>
-          <div className="row justify-content-center g-3 w-auto m-auto">
+          <div className="row justify-content-center g-3">
             {[
               { label: "React.js", icon: "bi bi-lightning" },
               { label: "JavaScript (ES6+)", icon: "bi bi-code-slash" },
@@ -57,7 +57,7 @@ function About() {
               { label: "Figma", icon: "bi bi-vector-pen" },
             ].map((skill, index) => (
               <div key={index} className="col-6 col-sm-4 col-md-3 text-center">
-                <div className="border rounded p-3 bg-white shadow-sm">
+                <div className="skill-card border rounded p-3 bg-white shadow-sm">
                   <i className={`${skill.icon} fs-4 text-primary mb-2`}></i>
                   <div className="fw-semibold">{skill.label}</div>
                 </div>

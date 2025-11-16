@@ -6,11 +6,10 @@ function Footer() {
     <footer className="footer text-white text-center py-4 mt-5">
       <div className="container m-auto">
         <p className="mb-2 fw-semibold small">
-          <i className="bi bi-c-circle me-1"></i> 2025 Prashanth. All rights
-          reserved.
+          <i className="bi bi-c-circle me-1"></i> 2025 Prashanth. All rights reserved.
         </p>
 
-        <div className="footer-icons">
+        <div className="footer-icons d-flex justify-content-center align-items-center flex-wrap">
           <a
             href="https://github.com/Prashanth2025"
             target="_blank"
@@ -20,7 +19,10 @@ function Footer() {
             <i className="bi bi-github"></i>
           </a>
 
-          <a href="mailto:prashanthramesh.02@gmail.com" aria-label="Email">
+          <a
+            href="mailto:prashanthramesh.02@gmail.com"
+            aria-label="Email"
+          >
             <i className="bi bi-envelope-fill"></i>
           </a>
 

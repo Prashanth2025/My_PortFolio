@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
-import { BsGithub, BsPlayCircleFill } from "react-icons/bs";
 import "./projects.css";
 import ShimmerCard from "./shimmercard.jsx";
 import "./shimmer.css";
+import ProjectCard from "./ProjectCard.jsx";
 
 const projects = [
   {
@@ -51,25 +51,14 @@ export default function Projects() {
                   .fill()
                   .map((_, i) => <ShimmerCard key={i} />)
               : projects.map((project, index) => (
-                  <div key={index} className="project-card">
-                    <h3>{project.title}</h3>
-                    <p>{project.description}</p>
-                    <div className="tech-tags">
-                      {project.tech.map((tech, i) => (
-                        <span key={i} className="tech-tag">
-                          {tech}
-                        </span>
-                      ))}
-                    </div>
-                    <div className="buttons">
-                      <a href={project.demo} className="demo-btn">
-                        <BsPlayCircleFill /> Live Demo
-                      </a>
-                      <a href={project.link} className="code-btn">
-                        <BsGithub /> Code
-                      </a>
-                    </div>
-                  </div>
+                  <ProjectCard
+                    key={index}
+                    title={project.title}
+                    description={project.description}
+                    tech={project.tech}
+                    link={project.link}
+                    demo={project.demo}
+                  />
                 ))}
           </div>
         </section>

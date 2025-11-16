@@ -1,8 +1,10 @@
+/* --- Navbar Layout --- */
 .navbar {
   background-color: #111 !important;
   transition: background-color 0.3s ease;
 }
 
+/* --- Brand Styling --- */
 .navbar-brand {
   color: #fff !important;
   letter-spacing: 1px;
@@ -17,6 +19,7 @@
   color: #0d6efd;
 }
 
+/* --- Nav Links --- */
 .nav-link {
   color: #ccc !important;
   font-weight: 500;
@@ -29,15 +32,20 @@
   border-bottom: 2px solid #0d6efd;
 }
 
+/* --- Active Link --- */
 .active-link {
   color: #0d6efd !important;
   border-bottom: 2px solid #0d6efd;
 }
 
-/* Mobile view fix */
+/* --- Mobile View Fix --- */
 @media (max-width: 992px) {
   .navbar-nav {
     text-align: center;
     gap: 0.5rem;
+  }
+
+  .navbar-nav .nav-link {
+    padding: 0.5rem 0;
   }
 }

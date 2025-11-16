@@ -16,12 +16,12 @@ function ProjectCard({ title, description, tech, link, demo }) {
           ))}
         </div>
 
-        <div className="mt-auto">
+        <div className="mt-auto d-flex flex-wrap gap-2">
           <a
             href={demo}
             target="_blank"
             rel="noopener noreferrer"
-            className="btn btn-sm btn-dark me-2"
+            className="btn btn-sm btn-dark demo-btn"
           >
             <i className="bi bi-box-arrow-up-right me-1"></i>Live Demo
           </a>
@@ -29,9 +29,9 @@ function ProjectCard({ title, description, tech, link, demo }) {
             href={link}
             target="_blank"
             rel="noopener noreferrer"
-            className="btn btn-sm btn-outline-dark"
+            className="btn btn-sm btn-outline-dark code-btn"
           >
-            <BsGithub />
+            <BsGithub className="me-1" />
             Code
           </a>
         </div>

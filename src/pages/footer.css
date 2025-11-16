@@ -1,6 +1,8 @@
+/* --- Footer Layout --- */
 .footer {
   background-color: #111;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 1.5rem 0;
 }
 
 .footer p {
@@ -8,7 +10,7 @@
   margin-bottom: 0.5rem;
 }
 
-/* --- Icon styling --- */
+/* --- Icon Styling --- */
 .footer-icons a {
   color: #ccc;
   margin: 0 10px;
@@ -30,5 +32,9 @@
 
   .footer {
     padding: 1.2rem 0;
+  }
+
+  .footer p {
+    font-size: 0.9rem;
   }
 }

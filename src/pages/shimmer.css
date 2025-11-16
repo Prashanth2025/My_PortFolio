@@ -1,12 +1,15 @@
+/* --- Wrapper Styling --- */
 .shimmer-wrapper {
   position: relative;
   overflow: hidden;
   background-color: #e0e0e0;
   border-radius: 1rem;
-  min-height: 100vh;
-  padding: 2rem;
+  padding: 1.5rem;
+  min-height: 250px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
 }
 
+/* --- Shimmer Effect --- */
 .shimmer {
   position: absolute;
   top: 0;
@@ -28,6 +31,7 @@
   }
 }
 
+/* --- Placeholder Elements --- */
 .placeholder {
   display: inline-block;
   height: 1rem;
@@ -35,10 +39,51 @@
   border-radius: 0.25rem;
 }
 
-.placeholder.rounded {
-  border-radius: 0.5rem;
+.placeholder.btn {
+  height: 2rem;
+  border-radius: 6px;
 }
 
-.placeholder.rounded-pill {
-  border-radius: 50rem;
+.placeholder.col-6 {
+  width: 60%;
+}
+
+.placeholder.col-8 {
+  width: 80%;
+}
+
+.placeholder.col-3 {
+  width: 30%;
+}
+
+.placeholder.col-2 {
+  width: 20%;
+}
+
+.placeholder.col-4 {
+  width: 40%;
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 576px) {
+  .shimmer-wrapper {
+    padding: 1rem;
+    min-height: 200px;
+  }
+
+  .placeholder.col-6,
+  .placeholder.col-8,
+  .placeholder.col-4 {
+    width: 100%;
+  }
+
+  .placeholder.btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .d-flex.gap-2 {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
 }

@@ -1,3 +1,4 @@
+/* --- Section Layout --- */
 .projects {
   text-align: center;
   padding: 2rem;
@@ -11,12 +12,14 @@
   margin-bottom: 1.5rem;
 }
 
+/* --- Grid Layout --- */
 .project-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 1.5rem;
 }
 
+/* --- Card Styling --- */
 .project-card {
   background: #fff;
   border-radius: 1rem;
@@ -34,26 +37,20 @@
   }
 }
 
-.project-card h3 {
+.project-card h5 {
   color: #0056d6;
-  margin-bottom: 0.8rem;
   font-size: 1.4rem;
+  margin-bottom: 0.8rem;
 }
 
 .project-card p {
   color: #444;
-  margin-bottom: 1rem;
   font-size: 1rem;
-}
-
-.tech-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
   margin-bottom: 1rem;
 }
 
-.tech-tag {
+/* --- Tech Badges --- */
+.tech-badge {
   background-color: #eaf3ff;
   color: #0056d6;
   border-radius: 8px;
@@ -62,12 +59,7 @@
   border: 1px solid #cfe0ff;
 }
 
-.buttons {
-  display: flex;
-  gap: 0.6rem;
-  flex-wrap: wrap;
-}
-
+/* --- Buttons --- */
 .demo-btn,
 .code-btn {
   border: 1px solid #ccc;
@@ -89,7 +81,7 @@
   color: white;
 }
 
-/* Mobile responsiveness */
+/* --- Mobile Responsiveness --- */
 @media (max-width: 576px) {
   .projects {
     padding: 1rem;
@@ -103,17 +95,12 @@
     font-size: 1.5rem;
   }
 
-  .project-card h3 {
+  .project-card h5 {
     font-size: 1.2rem;
   }
 
   .project-card p {
     font-size: 0.95rem;
-  }
-
-  .buttons {
-    flex-direction: column;
-    align-items: stretch;
   }
 
   .demo-btn,
