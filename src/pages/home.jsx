@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./home.css";
-import ShimmerHome from "./ShimmerHome.jsx";
+import ShimmerHome from "./shimmerHome.jsx";
 import "./shimmer.css";
 
 function Home() {
