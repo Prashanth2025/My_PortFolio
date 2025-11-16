@@ -1,19 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "./home.css";
-import ShimmerHome from "./shimmerHome.jsx";
-import "./shimmer.css";
 
 function Home() {
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    const timer = setTimeout(() => setLoading(false), 1500);
-    return () => clearTimeout(timer);
-  }, []);
-
-  return loading ? (
-    <ShimmerHome />
-  ) : (
+  return (
     <header className="hero d-flex align-items-center justify-content-center text-white">
       <div className="hero-content text-center px-3">
         <h1 className="hero-title animate-fade">Hi, I'm Prashanth</h1>
