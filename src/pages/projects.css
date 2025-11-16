@@ -24,20 +24,26 @@
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
   text-align: left;
   transition: transform 0.3s;
+  max-width: 500px;
+  margin: 0 auto;
 }
 
-.project-card:hover {
-  transform: translateY(-4px);
+@media (hover: hover) {
+  .project-card:hover {
+    transform: translateY(-4px);
+  }
 }
 
 .project-card h3 {
   color: #0056d6;
   margin-bottom: 0.8rem;
+  font-size: 1.4rem;
 }
 
 .project-card p {
   color: #444;
   margin-bottom: 1rem;
+  font-size: 1rem;
 }
 
 .tech-tags {
@@ -59,6 +65,7 @@
 .buttons {
   display: flex;
   gap: 0.6rem;
+  flex-wrap: wrap;
 }
 
 .demo-btn,
@@ -80,4 +87,38 @@
 .code-btn:hover {
   background: #0066ff;
   color: white;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 576px) {
+  .projects {
+    padding: 1rem;
+  }
+
+  .project-card {
+    padding: 1rem;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .project-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .project-card p {
+    font-size: 0.95rem;
+  }
+
+  .buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .demo-btn,
+  .code-btn {
+    width: 100%;
+    justify-content: center;
+  }
 }
