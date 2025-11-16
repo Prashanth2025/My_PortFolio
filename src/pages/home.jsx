@@ -1,32 +1,34 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./home.css";
+import ShimmerHome from "./ShimmerHome.jsx";
+import "./shimmer.css";
 
 function Home() {
-  return (
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => setLoading(false), 1500);
+    return () => clearTimeout(timer);
+  }, []);
+
+  return loading ? (
+    <ShimmerHome />
+  ) : (
     <header className="hero d-flex align-items-center justify-content-center text-white">
       <div className="hero-content text-center px-3">
-        {/* Name */}
-        <h1 className="hero-title animate-fade">
-          Hello, I'm <span className="name-highlight">Prashanth</span>
-        </h1>
+        <h1 className="hero-title animate-fade">Hi, I'm Prashanth</h1>
 
-        {/* Role */}
         <h2 className="hero-subtitle animate-fade delay-1">
-          Front-End Developer | React Enthusiast | UI UX Designer
+          Front-End Developer | React Specialist | UI/UX Designer
         </h2>
 
-        {/* Intro / Skills */}
         <p className="hero-description animate-fade delay-2">
-          I craft <span className="highlight">responsive</span>,{" "}
-          <span className="highlight">accessible</span>, and{" "}
-          <span className="highlight">visually engaging</span> web interfaces
-          using modern technologies like{" "}
-          <span className="highlight">React.js</span>, and{" "}
-          <span className="highlight">Figma</span>. Passionate about clean code,
-          intuitive UX, and real-world problem solving.
+          I specialize in building responsive, accessible, and visually polished
+          web interfaces. With hands-on experience in React.js, Bootstrap, and
+          Figma, I focus on clean code, intuitive user experiences, and solving
+          real-world problems through design and development.
         </p>
 
-        {/* Call to Action */}
         <a
           href="/projects"
           className="btn btn-primary btn-lg animate-fade delay-3"

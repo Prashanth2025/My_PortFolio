@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { BsGithub, BsPlayCircleFill } from "react-icons/bs";
 import "./projects.css";
-
-const techFilters = ["All", "React", "Python", "MongoDB", "Flask", "Bootstrap"];
+import ShimmerCard from "./shimmercard.jsx";
+import "./shimmer.css";
 
 const projects = [
   {
@@ -9,68 +10,70 @@ const projects = [
     description:
       "Empowers farmers with AI-driven crop recommendations, weather forecasts, and market insights. Built with Flask, Tailwind CSS, and React.",
     tech: ["Flask", "Tailwind CSS", "Python", "React.js"],
+    link: "#",
+    demo: "#",
   },
   {
     title: "Fake URL Detector (Bullseye)",
     description:
       "Detects phishing and malware links using VirusTotal API. Includes live screenshots and a modern dual-pane UI.",
     tech: ["React", "Python", "MongoDB", "VirusTotal API"],
+    link: "#",
+    demo: "#",
   },
   {
     title: "Item Packer",
     description:
       "Helps travelers plan and pack efficiently with a clean, responsive interface. Built with React and Bootstrap.",
     tech: ["React", "Bootstrap", "CSS"],
+    link: "#",
+    demo: "#",
   },
 ];
 
 export default function Projects() {
-  const [activeTech, setActiveTech] = useState("All");
+  const [loading, setLoading] = useState(true);
 
-  const filteredProjects =
-    activeTech === "All"
-      ? projects
-      : projects.filter((p) => p.tech.includes(activeTech));
+  useEffect(() => {
+    const timer = setTimeout(() => setLoading(false), 1500);
+    return () => clearTimeout(timer);
+  }, []);
 
   return (
-    <section className="projects">
-      <h2 className="section-title">🪄 My Projects</h2>
+    <div className="page-wrapper d-flex flex-column min-vh-100">
+      <main className="flex-grow-1">
+        <section className="projects">
+          <h2 className="section-title">🪄 My Projects</h2>
 
-      <div className="tech-filter">
-        {techFilters.map((tech) => (
-          <button
-            key={tech}
-            className={`filter-btn ${activeTech === tech ? "active" : ""}`}
-            onClick={() => setActiveTech(tech)}
-          >
-            {tech}
-          </button>
-        ))}
-      </div>
-
-      <div className="project-list">
-        {filteredProjects.map((project, index) => (
-          <div key={index} className="project-card">
-            <h3>{project.title}</h3>
-            <p>{project.description}</p>
-            <div className="tech-tags">
-              {project.tech.map((tech, i) => (
-                <span key={i} className="tech-tag">
-                  {tech}
-                </span>
-              ))}
-            </div>
-            <div className="buttons">
-              <button className="demo-btn">
-                <i className="bi bi-box-arrow-up-right me-1"></i> Live Demo
-              </button>
-              <button className="code-btn">
-                <i className="bi bi-code-slash me-1"></i> Code
-              </button>
-            </div>
+          <div className="project-list">
+            {loading
+              ? Array(3)
+                  .fill()
+                  .map((_, i) => <ShimmerCard key={i} />)
+              : projects.map((project, index) => (
+                  <div key={index} className="project-card">
+                    <h3>{project.title}</h3>
+                    <p>{project.description}</p>
+                    <div className="tech-tags">
+                      {project.tech.map((tech, i) => (
+                        <span key={i} className="tech-tag">
+                          {tech}
+                        </span>
+                      ))}
+                    </div>
+                    <div className="buttons">
+                      <a href={project.demo} className="demo-btn">
+                        <BsPlayCircleFill /> Live Demo
+                      </a>
+                      <a href={project.link} className="code-btn">
+                        <BsGithub /> Code
+                      </a>
+                    </div>
+                  </div>
+                ))}
           </div>
-        ))}
-      </div>
-    </section>
+        </section>
+      </main>
+    </div>
   );
 }

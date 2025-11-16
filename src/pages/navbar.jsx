@@ -5,13 +5,13 @@ import "./navbar.css";
 function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm sticky-top">
-      <div className="container-fluid px-4 d-flex justify-content-between align-items-center">
-        {/* Brand on the left */}
+      <div className="container-fluid px-4">
+        {/* Brand */}
         <NavLink className="navbar-brand fw-bold fs-4" to="/">
-          Portfolio
+          Prashanth<span className="text-primary">.Dev</span>
         </NavLink>
 
-        {/* Toggle for mobile */}
+        {/* Mobile Toggle */}
         <button
           className="navbar-toggler"
           type="button"
@@ -24,39 +24,21 @@ function Navbar() {
           <span className="navbar-toggler-icon"></span>
         </button>
 
-        {/* Links on the right */}
+        {/* Nav Links */}
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ms-auto d-flex align-items-center gap-1">
-            <li className="nav-item">
-              <NavLink
-                to="/about"
-                className={({ isActive }) =>
-                  `nav-link ${isActive ? "active-link" : ""}`
-                }
-              >
-                About
-              </NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink
-                to="/projects"
-                className={({ isActive }) =>
-                  `nav-link ${isActive ? "active-link" : ""}`
-                }
-              >
-                Projects
-              </NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink
-                to="/contact"
-                className={({ isActive }) =>
-                  `nav-link ${isActive ? "active-link" : ""}`
-                }
-              >
-                Contact
-              </NavLink>
-            </li>
+            {["about", "projects", "contact"].map((route) => (
+              <li className="nav-item" key={route}>
+                <NavLink
+                  to={`/${route}`}
+                  className={({ isActive }) =>
+                    `nav-link ${isActive ? "active-link" : ""}`
+                  }
+                >
+                  {route.charAt(0).toUpperCase() + route.slice(1)}
+                </NavLink>
+              </li>
+            ))}
           </ul>
         </div>
       </div>

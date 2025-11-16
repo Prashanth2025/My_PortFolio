@@ -1,4 +1,5 @@
 import React from "react";
+import { BsGithub } from "react-icons/bs";
 
 function ProjectCard({ title, description, tech, link, demo }) {
   return (
@@ -30,7 +31,8 @@ function ProjectCard({ title, description, tech, link, demo }) {
             rel="noopener noreferrer"
             className="btn btn-sm btn-outline-dark"
           >
-            <i className=" me-1"></i>Code
+            <BsGithub />
+            Code
           </a>
         </div>
       </div>

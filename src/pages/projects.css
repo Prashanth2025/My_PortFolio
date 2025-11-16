@@ -11,40 +11,6 @@
   margin-bottom: 1.5rem;
 }
 
-/* FILTER BUTTONS */
-.tech-filter {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 0.8rem;
-  margin-bottom: 2rem;
-  padding: 0.5rem 1rem;
-  border: 1px solid #ccc;
-  border-radius: 2rem;
-  background: #fff;
-}
-
-.filter-btn {
-  border: 1px solid #ccc;
-  background: white;
-  color: #333;
-  padding: 6px 14px;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.filter-btn:hover {
-  background-color: #e9f2ff;
-  color: #0066ff;
-}
-
-.filter-btn.active {
-  background-color: #0066ff;
-  color: #fff;
-}
-
-/* PROJECT CARDS */
 .project-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -74,7 +40,6 @@
   margin-bottom: 1rem;
 }
 
-/* TECH TAGS */
 .tech-tags {
   display: flex;
   flex-wrap: wrap;
@@ -91,7 +56,6 @@
   border: 1px solid #cfe0ff;
 }
 
-/* BUTTONS INSIDE CARD */
 .buttons {
   display: flex;
   gap: 0.6rem;
@@ -106,6 +70,10 @@
   border-radius: 6px;
   font-size: 0.9rem;
   transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
 }
 
 .demo-btn:hover,
