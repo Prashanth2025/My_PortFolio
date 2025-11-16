@@ -51,12 +51,12 @@
 
 /* --- Tech Badges --- */
 .tech-badge {
-  background-color: #eaf3ff;
-  color: #0056d6;
+  background-color: black;
+  color: antiquewhite;
   border-radius: 8px;
   padding: 4px 10px;
   font-size: 0.85rem;
-  border: 1px solid #cfe0ff;
+  border: 1px solid black;
 }
 
 /* --- Buttons --- */
