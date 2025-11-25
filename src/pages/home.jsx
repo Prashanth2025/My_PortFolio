@@ -16,12 +16,25 @@ function Home() {
           Figma, I focus on clean code, intuitive user experiences, and solving
           real-world problems through design and development.
         </p>
-        <Link
-          to="/projects"
-          className="btn btn-primary btn-lg animate-fade delay-3"
-        >
-          Explore My Projects
-        </Link>
+
+        <div className="hero-buttons">
+          {/* Explore Projects Button */}
+          <Link
+            to="/projects"
+            className="btn-primary btn-lg animate-fade delay-3"
+          >
+            Explore My Projects
+          </Link>
+
+          {/* Download Resume Button */}
+          <a
+            href="/Prashanth_Resume.pdf"
+            download
+            className="btn-outline btn-lg animate-fade delay-4"
+          >
+            Download Resume
+          </a>
+        </div>
       </div>
     </header>
   );

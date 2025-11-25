@@ -48,6 +48,17 @@ function Navbar() {
                 Contact
               </NavLink>
             </li>
+            <li className="nav-item">
+              <a
+                className="nav-link"
+                href="/Prashanth_Resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={closeMenu}
+              >
+                Resume
+              </a>
+            </li>
           </ul>
         </div>
       </div>
