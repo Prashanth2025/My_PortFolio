@@ -56,8 +56,8 @@ function Projects() {
                     title={project.title}
                     description={project.description}
                     tech={project.tech}
-                    link={project.link}
                     demo={project.demo}
+                    code={project.code}
                   />
                 ))}
           </div>
