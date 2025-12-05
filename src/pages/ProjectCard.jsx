@@ -1,7 +1,7 @@
 import React from "react";
 import { BsGithub } from "react-icons/bs";
 
-function ProjectCard({ title, description, tech, link, demo }) {
+function ProjectCard({ title, description, tech, code, demo }) {
   return (
     <div className="card project-card h-100 shadow-sm border-0">
       <div className="card-body d-flex flex-column">
@@ -26,7 +26,7 @@ function ProjectCard({ title, description, tech, link, demo }) {
             <i className="bi bi-box-arrow-up-right me-1"></i>Live Demo
           </a>
           <a
-            href={link}
+            href={code}
             target="_blank"
             rel="noopener noreferrer"
             className="btn btn-sm btn-outline-dark code-btn"

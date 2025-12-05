@@ -10,24 +10,24 @@ const projects = [
     description:
       "Empowers farmers with AI-driven crop recommendations, weather forecasts, and market insights. Built with Flask, Tailwind CSS, and React.",
     tech: ["Flask", "Tailwind CSS", "Python", "React.js"],
-    link: "#",
-    demo: "#",
+    demo: "https://farmer-ai-x2hw.onrender.com/",
+    code: "https://github.com/Prashanth2025/project24",
   },
   {
     title: "Fake URL Detector (Bullseye)",
     description:
       "Detects phishing and malware links using VirusTotal API. Includes live screenshots and a modern dual-pane UI.",
     tech: ["React", "Python", "MongoDB", "VirusTotal API"],
-    link: "#",
-    demo: "#",
+    demo: "https://bullseye-n9jz.onrender.com/",
+    code: "https://github.com/KRITHIKus/safelink",
   },
   {
     title: "Item Packer",
     description:
       "Helps travelers plan and pack efficiently with a clean, responsive interface. Built with React and Bootstrap.",
     tech: ["React", "Bootstrap", "CSS"],
-    link: "#",
-    demo: "#",
+    demo: "https://item-packer.onrender.com/",
+    link: "https://github.com/Prashanth2025/Item_Packer",
   },
 ];
 
@@ -56,8 +56,8 @@ function Projects() {
                     title={project.title}
                     description={project.description}
                     tech={project.tech}
-                    link={project.link}
                     demo={project.demo}
+                    code={project.code}
                   />
                 ))}
           </div>
