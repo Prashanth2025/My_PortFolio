@@ -26,8 +26,8 @@ const projects = [
     description:
       "Helps travelers plan and pack efficiently with a clean, responsive interface. Built with React and Bootstrap.",
     tech: ["React", "Bootstrap", "CSS"],
-    demo: "https://item-packer.onrender.com/",
-    link: "https://github.com/Prashanth2025/Item_Packer",
+    link: "#",
+    demo: "#",
   },
 ];
 
