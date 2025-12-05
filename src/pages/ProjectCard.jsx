@@ -26,7 +26,7 @@ function ProjectCard({ title, description, tech, link, demo }) {
             <i className="bi bi-box-arrow-up-right me-1"></i>Live Demo
           </a>
           <a
-            href={link}
+            href={code}
             target="_blank"
             rel="noopener noreferrer"
             className="btn btn-sm btn-outline-dark code-btn"
