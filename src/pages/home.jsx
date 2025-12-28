@@ -8,13 +8,17 @@ function Home() {
       <div className="hero-content text-center px-3">
         <h1 className="hero-title animate-fade">Hi, I'm Prashanth</h1>
         <h2 className="hero-subtitle animate-fade delay-1">
-          Front-End Developer | React Specialist | UI/UX Designer
+          Full-Stack Developer | React Specialist | UI/UX Designer
         </h2>
         <p className="hero-description animate-fade delay-2">
           I specialize in building responsive, accessible, and visually polished
-          web interfaces. With hands-on experience in React.js, Bootstrap, and
-          Figma, I focus on clean code, intuitive user experiences, and solving
-          real-world problems through design and development.
+          web interfaces. With hands-on experience in <strong>React.js</strong>,
+          <strong>Bootstrap</strong>, and <strong>Figma</strong>, I focus on
+          clean code, intuitive user experiences, and solving real-world
+          problems. On the backend, I design and implement{" "}
+          <strong>REST APIs</strong> using <strong>Node.js</strong>,{" "}
+          <strong>Express.js</strong>, and <strong>MongoDB</strong>, ensuring
+          scalable and secure applications.
         </p>
 
         <div className="hero-buttons">
